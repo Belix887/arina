@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>С Днем Рождения, Сестренка! 🎉</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Экран загрузки -->
+    <div class="loading-animation" id="loadingScreen">
+        <div class="loading-spinner"></div>
+    </div>
+    <div class="scroll-progress">
+        <div class="progress-bar"></div>
+    </div>
+    
+    <!-- Индикатор секций -->
+    <div class="section-indicator">
+        <div class="indicator-dot active" data-section="hero"></div>
+        <div class="indicator-dot" data-section="memories"></div>
+        <div class="indicator-dot" data-section="wishes"></div>
+        <div class="indicator-dot" data-section="greeting"></div>
+    </div>
+    
+    <!-- Милые персонажи -->
+    <div class="cute-characters">
+        <div class="character bunny animate-float" style="left: 5%; animation-delay: 0s;">🐰</div>
+        <div class="character cat animate-float" style="left: 15%; animation-delay: 1s;">🐱</div>
+        <div class="character dog animate-float" style="left: 85%; animation-delay: 2s;">🐶</div>
+        <div class="character bear animate-float" style="left: 95%; animation-delay: 3s;">🐻</div>
+        <div class="character unicorn animate-float" style="left: 50%; animation-delay: 4s;">🦄</div>
+    </div>
+    
+    <!-- Милые звездочки -->
+    <div class="twinkling-stars">
+        <div class="star">⭐</div>
+        <div class="star">✨</div>
+        <div class="star">🌟</div>
+        <div class="star">💫</div>
+        <div class="star">⭐</div>
+        <div class="star">✨</div>
+        <div class="star">🌟</div>
+        <div class="star">💫</div>
+    </div>
+    
+    <!-- Милые цветочки -->
+    <div class="floating-flowers">
+        <div class="flower">🌸</div>
+        <div class="flower">🌺</div>
+        <div class="flower">🌻</div>
+        <div class="flower">🌷</div>
+        <div class="flower">🌹</div>
+        <div class="flower">🌼</div>
+    </div>
+    
+    <!-- Главная секция -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="main-title animate-scale-in">С Днем Рождения!</h1>
+            <h2 class="subtitle animate-slide-in-left">Моя дорогая сестренка</h2>
+            <div class="age-badge animate-pulse-glow">
+                <span class="age-number">12</span>
+                <span class="age-text">лет</span>
+            </div>
+            <p class="hero-message animate-fade-in-delay">
+                Сегодня особенный день - день, когда мир стал ярче на одну улыбку! 
+                Ты растешь такой замечательной, умной и доброй девочкой. 
+                Пусть этот год принесет тебе много радости, новых друзей и счастливых моментов! ✨
+            </p>
+        </div>
+        <div class="floating-hearts">
+            <div class="heart">💖</div>
+            <div class="heart">💕</div>
+            <div class="heart">💗</div>
+            <div class="heart">💝</div>
+            <div class="heart">💖</div>
+            <div class="heart">💕</div>
+            <div class="heart">💗</div>
+            <div class="heart">💝</div>
+            <div class="heart">💖</div>
+            <div class="heart">💕</div>
+        </div>
+        
+        <!-- Милые облачка с сообщениями -->
+        <div class="love-clouds">
+            <div class="cloud animate-float" style="left: 10%; animation-delay: 0s;">
+                <span>💕 Люблю тебя! 💕</span>
+            </div>
+            <div class="cloud animate-float" style="left: 80%; animation-delay: 2s;">
+                <span>🌟 Ты особенная! 🌟</span>
+            </div>
+            <div class="cloud animate-float" style="left: 30%; animation-delay: 4s;">
+                <span>🎂 С Днем Рождения! 🎂</span>
+            </div>
+            <div class="cloud animate-float" style="left: 70%; animation-delay: 6s;">
+                <span>💖 Горжусь тобой! 💖</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Галерея воспоминаний -->
+    <section class="memories-section">
+        <div class="container">
+            <h2 class="section-title animate-fade-in">История в фотографиях</h2>
+            <p class="section-subtitle animate-fade-in-delay">
+                Путь длиной в 12 лет
+            </p>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Начало пути 🌟</h3>
+                        <p>Первые страницы истории</p>
+                    </div>
+                    <div class="photo-grid early-years">
+                        <div class="photo-item">
+                            <img src="photo_1_2025-10-02_00-26-16.jpg" alt="Фотография" loading="lazy">
+                        </div>
+                        <div class="photo-item">
+                            <img src="photo_2_2025-10-02_00-26-16.jpg" alt="Фотография" loading="lazy">
+                        </div>
+                        <div class="photo-item">
+                            <img src="photo_3_2025-10-02_00-26-16.jpg" alt="Фотография" loading="lazy">
+                        </div>
+                        <div class="photo-item">
+                            <img src="photo_4_2025-10-02_00-26-16.jpg" alt="Фотография" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Первые шаги 👣</h3>
+                        <p>Открытие мира</p>
+                    </div>
+                    <div class="photo-grid toddler-years">
+                        <div class="photo-item">
+                            <img src="photo_5_2025-10-02_00-26-16.jpg" alt="Фотография" loading="lazy">
+                        </div>
+                        <div class="photo-item">
+                            <img src="photo_6_2025-10-02_00-26-16.jpg" alt="Фотография" loading="lazy">
+                        </div>
+                        <div class="photo-item">
+                            <img src="photo_7_2025-10-02_00-26-16.jpg" alt="Фотография" loading="lazy">
+                        </div>
+                        <div class="photo-item">
+                            <img src="photo_8_2025-10-02_00-26-16.jpg" alt="Фотография" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Исследования 🗺️</h3>
+                        <p>Время открытий</p>
+                    </div>
+                    <div class="photo-grid preschool-years">
+                        <div class="photo-item">
+                            <img src="photo_9_2025-10-02_00-26-16.jpg" alt="Фотография" loading="lazy">
+                        </div>
+                        <div class="photo-item">
+                            <img src="photo_10_2025-10-02_00-26-16.jpg" alt="Фотография" loading="lazy">
+                        </div>
+                        <div class="photo-item">
+                            <img src="photo_11_2025-10-02_00-26-16.jpg" alt="Фотография" loading="lazy">
+                        </div>
+                        <div class="photo-item">
+                            <img src="photo_12_2025-10-02_00-26-16.jpg" alt="Фотография" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Новые горизонты 📚</h3>
+                        <p>Расширение границ</p>
+                    </div>
+                    <div class="photo-grid school-years">
+                        <div class="photo-item">
+                            <img src="photo_13_2025-10-02_00-26-16.jpg" alt="Фотография" loading="lazy">
+                        </div>
+                        <div class="photo-item">
+                            <img src="photo_14_2025-10-02_00-26-16.jpg" alt="Фотография" loading="lazy">
+                        </div>
+                        <div class="photo-item">
+                            <img src="photo_15_2025-10-02_00-26-16.jpg" alt="Фотография" loading="lazy">
+                        </div>
+                        <div class="photo-item">
+                            <img src="photo_16_2025-10-02_00-26-16.jpg" alt="Фотография" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Становление 🌱</h3>
+                        <p>Формирование личности</p>
+                    </div>
+                    <div class="photo-grid teen-years">
+                        <div class="photo-item">
+                            <img src="photo_17_2025-10-02_00-26-16.jpg" alt="Фотография" loading="lazy">
+                        </div>
+                        <div class="photo-item">
+                            <img src="photo_18_2025-10-02_00-26-16.jpg" alt="Фотография" loading="lazy">
+                        </div>
+                        <div class="photo-item">
+                            <img src="photo_19_2025-10-02_00-26-16.jpg" alt="Фотография" loading="lazy">
+                        </div>
+                        <div class="photo-item">
+                            <img src="photo_20_2025-10-02_00-26-16.jpg" alt="Фотография" loading="lazy">
+                        </div>
+                        <div class="photo-item">
+                            <img src="photo_21_2025-10-02_00-26-16.jpg" alt="Фотография" loading="lazy">
+                        </div>
+                        <div class="photo-item">
+                            <img src="photo_22_2025-10-02_00-26-16.jpg" alt="Фотография" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Творчество 🎨</h3>
+                        <p>Выражение себя</p>
+                    </div>
+                    <div class="photo-grid hobbies-years">
+                        <div class="photo-item">
+                            <img src="photo_23_2025-10-02_00-26-16.jpg" alt="Фотография" loading="lazy">
+                        </div>
+                        <div class="photo-item">
+                            <img src="photo_24_2025-10-02_00-26-16.jpg" alt="Фотография" loading="lazy">
+                        </div>
+                        <div class="photo-item">
+                            <img src="photo_25_2025-10-02_00-26-16.jpg" alt="Фотография" loading="lazy">
+                        </div>
+                        <div class="photo-item">
+                            <img src="photo_26_2025-10-02_00-26-16.jpg" alt="Фотография" loading="lazy">
+                        </div>
+                        <div class="photo-item">
+                            <img src="photo_27_2025-10-02_00-26-16.jpg" alt="Фотография" loading="lazy">
+                        </div>
+                        <div class="photo-item">
+                            <img src="photo_28_2025-10-02_00-26-16.jpg" alt="Фотография" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Близкие связи 💕</h3>
+                        <p>Дорогие моменты</p>
+                    </div>
+                    <div class="photo-grid family-years">
+                        <div class="photo-item">
+                            <img src="photo_29_2025-10-02_00-26-16.jpg" alt="Фотография" loading="lazy">
+                        </div>
+                        <div class="photo-item">
+                            <img src="photo_30_2025-10-02_00-26-16.jpg" alt="Фотография" loading="lazy">
+                        </div>
+                        <div class="photo-item">
+                            <img src="photo_31_2025-10-02_00-26-16.jpg" alt="Фотография" loading="lazy">
+                        </div>
+                        <div class="photo-item">
+                            <img src="photo_32_2025-10-02_00-26-16.jpg" alt="Фотография" loading="lazy">
+                        </div>
+                        <div class="photo-item">
+                            <img src="photo_33_2025-10-02_00-26-16.jpg" alt="Фотография" loading="lazy">
+                        </div>
+                        <div class="photo-item">
+                            <img src="photo_34_2025-10-02_00-26-16.jpg" alt="Фотография" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Особые дни ✨</h3>
+                        <p>Запоминающиеся моменты</p>
+                    </div>
+                    <div class="photo-grid celebrations-years">
+                        <div class="photo-item">
+                            <img src="photo_35_2025-10-02_00-26-16.jpg" alt="Фотография" loading="lazy">
+                        </div>
+                        <div class="photo-item">
+                            <img src="photo_36_2025-10-02_00-26-16.jpg" alt="Фотография" loading="lazy">
+                        </div>
+                        <div class="photo-item">
+                            <img src="photo_37_2025-10-02_00-26-16.jpg" alt="Фотография" loading="lazy">
+                        </div>
+                        <div class="photo-item">
+                            <img src="photo_38_2025-10-02_00-26-16.jpg" alt="Фотография" loading="lazy">
+                        </div>
+                        <div class="photo-item">
+                            <img src="photo_39_2025-10-02_00-26-16.jpg" alt="Фотография" loading="lazy">
+                        </div>
+                        <div class="photo-item">
+                            <img src="photo_40_2025-10-02_00-26-16.jpg" alt="Фотография" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Приключения 🌍</h3>
+                        <p>Новые впечатления</p>
+                    </div>
+                    <div class="photo-grid adventures-years">
+                        <div class="photo-item">
+                            <img src="photo_41_2025-10-02_00-26-16.jpg" alt="Фотография" loading="lazy">
+                        </div>
+                        <div class="photo-item">
+                            <img src="photo_42_2025-10-02_00-26-16.jpg" alt="Фотография" loading="lazy">
+                        </div>
+                        <div class="photo-item">
+                            <img src="photo_43_2025-10-02_00-26-16.jpg" alt="Фотография" loading="lazy">
+                        </div>
+                        <div class="photo-item">
+                            <img src="photo_44_2025-10-02_00-26-16.jpg" alt="Фотография" loading="lazy">
+                        </div>
+                        <div class="photo-item">
+                            <img src="photo_45_2025-10-02_00-26-16.jpg" alt="Фотография" loading="lazy">
+                        </div>
+                        <div class="photo-item">
+                            <img src="photo_46_2025-10-02_00-26-16.jpg" alt="Фотография" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Общение 👥</h3>
+                        <p>Встречи и знакомства</p>
+                    </div>
+                    <div class="photo-grid friends-years">
+                        <div class="photo-item">
+                            <img src="photo_47_2025-10-02_00-26-16.jpg" alt="Фотография" loading="lazy">
+                        </div>
+                        <div class="photo-item">
+                            <img src="photo_48_2025-10-02_00-26-16.jpg" alt="Фотография" loading="lazy">
+                        </div>
+                        <div class="photo-item">
+                            <img src="photo_49_2025-10-02_00-26-16.jpg" alt="Фотография" loading="lazy">
+                        </div>
+                        <div class="photo-item">
+                            <img src="photo_50_2025-10-02_00-26-16.jpg" alt="Фотография" loading="lazy">
+                        </div>
+                        <div class="photo-item">
+                            <img src="photo_51_2025-10-02_00-26-16.jpg" alt="Фотография" loading="lazy">
+                        </div>
+                        <div class="photo-item">
+                            <img src="photo_52_2025-10-02_00-26-16.jpg" alt="Фотография" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Активность 🏃‍♀️</h3>
+                        <p>Движение и энергия</p>
+                    </div>
+                    <div class="photo-grid sports-years">
+                        <div class="photo-item">
+                            <img src="photo_53_2025-10-02_00-26-16.jpg" alt="Фотография" loading="lazy">
+                        </div>
+                        <div class="photo-item">
+                            <img src="photo_54_2025-10-02_00-26-16.jpg" alt="Фотография" loading="lazy">
+                        </div>
+                        <div class="photo-item">
+                            <img src="photo_55_2025-10-02_00-26-16.jpg" alt="Фотография" loading="lazy">
+                        </div>
+                        <div class="photo-item">
+                            <img src="photo_56_2025-10-02_00-26-16.jpg" alt="Фотография" loading="lazy">
+                        </div>
+                        <div class="photo-item">
+                            <img src="photo_57_2025-10-02_00-26-16.jpg" alt="Фотография" loading="lazy">
+                        </div>
+                        <div class="photo-item">
+                            <img src="photo_58_2025-10-02_00-26-16.jpg" alt="Фотография" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Достижения 🏆</h3>
+                        <p>Успехи и победы</p>
+                    </div>
+                    <div class="photo-grid achievements-years">
+                        <div class="photo-item">
+                            <img src="photo_59_2025-10-02_00-26-16.jpg" alt="Фотография" loading="lazy">
+                        </div>
+                        <div class="photo-item">
+                            <img src="photo_60_2025-10-02_00-26-16.jpg" alt="Фотография" loading="lazy">
+                        </div>
+                        <div class="photo-item">
+                            <img src="photo_61_2025-10-02_00-26-16.jpg" alt="Фотография" loading="lazy">
+                        </div>
+                        <div class="photo-item">
+                            <img src="photo_62_2025-10-02_00-26-16.jpg" alt="Фотография" loading="lazy">
+                        </div>
+                        <div class="photo-item">
+                            <img src="photo_63_2025-10-02_00-26-16.jpg" alt="Фотография" loading="lazy">
+                        </div>
+                        <div class="photo-item">
+                            <img src="photo_64_2025-10-02_00-26-16.jpg" alt="Фотография" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Развитие 🌿</h3>
+                        <p>Постоянный рост</p>
+                    </div>
+                    <div class="photo-grid recent-growth-years">
+                        <div class="photo-item">
+                            <img src="photo_65_2025-10-02_00-26-16.jpg" alt="Фотография" loading="lazy">
+                        </div>
+                        <div class="photo-item">
+                            <img src="photo_66_2025-10-02_00-26-16.jpg" alt="Фотография" loading="lazy">
+                        </div>
+                        <div class="photo-item">
+                            <img src="photo_67_2025-10-02_00-26-16.jpg" alt="Фотография" loading="lazy">
+                        </div>
+                        <div class="photo-item">
+                            <img src="photo_68_2025-10-02_00-26-16.jpg" alt="Фотография" loading="lazy">
+                        </div>
+                        <div class="photo-item">
+                            <img src="photo_69_2025-10-02_00-26-16.jpg" alt="Фотография" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Специальный раздел с фотографиями 70-100 -->
+                <div class="timeline-item special-section">
+                    <div class="timeline-content">
+                        <h3>Сегодня - 12 лет! ✨</h3>
+                        <p>Моменты, которые показывают, какой замечательной ты стала!</p>
+                    </div>
+                    <div class="photo-grid modern-beauty-years">
+                        <div class="photo-item">
+                            <img src="photo_70_2025-10-02_00-26-16.jpg" alt="Фотография" loading="lazy">
+                        </div>
+                        <div class="photo-item">
+                            <img src="photo_71_2025-10-02_00-26-16.jpg" alt="Фотография" loading="lazy">
+                        </div>
+                        <div class="photo-item">
+                            <img src="photo_72_2025-10-02_00-26-16.jpg" alt="Фотография" loading="lazy">
+                        </div>
+                        <div class="photo-item">
+                            <img src="photo_73_2025-10-02_00-26-16.jpg" alt="Фотография" loading="lazy">
+                        </div>
+                        <div class="photo-item">
+                            <img src="photo_74_2025-10-02_00-26-16.jpg" alt="Фотография" loading="lazy">
+                        </div>
+                        <div class="photo-item">
+                            <img src="photo_75_2025-10-02_00-26-16.jpg" alt="Фотография" loading="lazy">
+                        </div>
+                        <div class="photo-item">
+                            <img src="photo_76_2025-10-02_00-26-16.jpg" alt="Фотография" loading="lazy">
+                        </div>
+                        <div class="photo-item">
+                            <img src="photo_77_2025-10-02_00-26-16.jpg" alt="Фотография" loading="lazy">
+                        </div>
+                        <div class="photo-item">
+                            <img src="photo_78_2025-10-02_00-26-16.jpg" alt="Фотография" loading="lazy">
+                        </div>
+                        <div class="photo-item">
+                            <img src="photo_79_2025-10-02_00-26-16.jpg" alt="Фотография" loading="lazy">
+                        </div>
+                        <div class="photo-item">
+                            <img src="photo_80_2025-10-02_00-26-16.jpg" alt="Фотография" loading="lazy">
+                        </div>
+                        <div class="photo-item">
+                            <img src="photo_81_2025-10-02_00-26-16.jpg" alt="Фотография" loading="lazy">
+                        </div>
+                        <div class="photo-item">
+                            <img src="photo_82_2025-10-02_00-26-16.jpg" alt="Фотография" loading="lazy">
+                        </div>
+                        <div class="photo-item">
+                            <img src="photo_83_2025-10-02_00-26-16.jpg" alt="Фотография" loading="lazy">
+                        </div>
+                        <div class="photo-item">
+                            <img src="photo_84_2025-10-02_00-26-16.jpg" alt="Фотография" loading="lazy">
+                        </div>
+                        <div class="photo-item">
+                            <img src="photo_85_2025-10-02_00-26-16.jpg" alt="Фотография" loading="lazy">
+                        </div>
+                        <div class="photo-item">
+                            <img src="photo_86_2025-10-02_00-26-16.jpg" alt="Фотография" loading="lazy">
+                        </div>
+                        <div class="photo-item">
+                            <img src="photo_87_2025-10-02_00-26-16.jpg" alt="Фотография" loading="lazy">
+                        </div>
+                        <div class="photo-item">
+                            <img src="photo_88_2025-10-02_00-26-16.jpg" alt="Фотография" loading="lazy">
+                        </div>
+                        <div class="photo-item">
+                            <img src="photo_89_2025-10-02_00-26-16.jpg" alt="Фотография" loading="lazy">
+                        </div>
+                        <div class="photo-item">
+                            <img src="photo_90_2025-10-02_00-26-16.jpg" alt="Фотография" loading="lazy">
+                        </div>
+                        <div class="photo-item">
+                            <img src="photo_91_2025-10-02_00-26-16.jpg" alt="Фотография" loading="lazy">
+                        </div>
+                        <div class="photo-item">
+                            <img src="photo_92_2025-10-02_00-26-16.jpg" alt="Фотография" loading="lazy">
+                        </div>
+                        <div class="photo-item">
+                            <img src="photo_93_2025-10-02_00-26-16.jpg" alt="Фотография" loading="lazy">
+                        </div>
+                        <div class="photo-item">
+                            <img src="photo_94_2025-10-02_00-26-16.jpg" alt="Фотография" loading="lazy">
+                        </div>
+                        <div class="photo-item">
+                            <img src="photo_95_2025-10-02_00-26-16.jpg" alt="Фотография" loading="lazy">
+                        </div>
+                        <div class="photo-item">
+                            <img src="photo_96_2025-10-02_00-26-16.jpg" alt="Фотография" loading="lazy">
+                        </div>
+                        <div class="photo-item">
+                            <img src="photo_97_2025-10-02_00-26-16.jpg" alt="Фотография" loading="lazy">
+                        </div>
+                        <div class="photo-item">
+                            <img src="photo_98_2025-10-02_00-26-16.jpg" alt="Фотография" loading="lazy">
+                        </div>
+                        <div class="photo-item">
+                            <img src="photo_99_2025-10-02_00-26-16.jpg" alt="Фотография" loading="lazy">
+                        </div>
+                        <div class="photo-item">
+                            <img src="photo_100_2025-10-02_00-26-16.jpg" alt="Фотография" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Пожелания -->
+    <section class="wishes-section">
+        <div class="container">
+            <h2 class="section-title animate-fade-in">Пожелания на Новый Год Жизни</h2>
+            
+            <div class="wishes-grid">
+                <div class="wish-card animate-slide-up">
+                    <div class="wish-icon">🌟</div>
+                    <h3>Звездных Достижений</h3>
+                    <p>Пусть все твои мечты сбываются, а цели достигаются легко и радостно!</p>
+                </div>
+                
+                <div class="wish-card animate-slide-up">
+                    <div class="wish-icon">💖</div>
+                    <h3>Много Любви</h3>
+                    <p>Пусть тебя окружают только добрые люди, которые ценят и любят тебя!</p>
+                </div>
+                
+                <div class="wish-card animate-slide-up">
+                    <div class="wish-icon">🎨</div>
+                    <h3>Творческих Успехов</h3>
+                    <p>Развивай свои таланты, твори и создавай прекрасное!</p>
+                </div>
+                
+                <div class="wish-card animate-slide-up">
+                    <div class="wish-icon">🎉</div>
+                    <h3>Радостных Моментов</h3>
+                    <p>Каждый день пусть приносит улыбки, смех и счастливые воспоминания!</p>
+                </div>
+                
+                <div class="wish-card animate-slide-up">
+                    <div class="wish-icon">🌺</div>
+                    <h3>Красоты и Здоровья</h3>
+                    <p>Оставайся такой же красивой, здоровой и полной энергии!</p>
+                </div>
+                
+                <div class="wish-card animate-slide-up">
+                    <div class="wish-icon">🎁</div>
+                    <h3>Приятных Сюрпризов</h3>
+                    <p>Пусть жизнь преподносит тебе только хорошие сюрпризы!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция с извинениями и подарком -->
+    <section class="apology-section">
+        <div class="container">
+            <div class="apology-content">
+                <div class="apology-icon animate-bounce">💝</div>
+                <h2 class="apology-title animate-fade-in">Мне очень жаль, что я не смог приехать... 😢</h2>
+                <div class="apology-text animate-fade-in-delay">
+                    <p>
+                        Дорогая сестренка! Мне так грустно, что я не могу быть рядом с тобой в этот особенный день. 
+                        Я очень хотел приехать и лично поздравить тебя с 12-летием! 💕
+                    </p>
+                    <p>
+                        Но знай - я думаю о тебе каждую минуту и очень сильно люблю! 
+                        Ты самая лучшая сестра на свете! 🌟
+                    </p>
+                    <p>
+                        Родители передадут от меня особенный подарок - этот сайт создан с огромной любовью специально для тебя! 
+                        Каждая фотография, каждая анимация, каждое слово - все это сделано с мыслями о тебе! 💖
+                    </p>
+                </div>
+                <div class="gift-box animate-scale-in">
+                    <div class="gift-icon">🎁</div>
+                    <h3>Подарок от меня через родителей</h3>
+                    <p>Этот сайт - мой подарок тебе на день рождения!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="final-greeting">
+        <div class="container">
+            <div class="greeting-content">
+                <h2 class="greeting-title animate-fade-in">С Бесконечной Любовью 💕</h2>
+                <div class="greeting-text animate-fade-in-delay">
+                    <p>
+                        Дорогая сестренка! Сегодня тебе исполняется 12 лет - это такой важный возраст! 
+                        Ты становишься все более самостоятельной, умной и замечательной.
+                    </p>
+                    <p>
+                        Мы так гордимся тобой и любим тебя больше всего на свете! 
+                        Пусть этот новый год жизни будет наполнен радостью, смехом, 
+                        новыми друзьями и незабываемыми приключениями.
+                    </p>
+                    <p>
+                        Помни: ты особенная, талантливая и способная на все! 
+                        Верь в себя, мечтай смело и никогда не переставай улыбаться! 😊
+                    </p>
+                    <p class="special-message">
+                        <strong>Я очень скучаю по тебе и мечтаю о том дне, когда мы снова будем вместе! 
+                        Ты всегда в моем сердце! 💖</strong>
+                    </p>
+                </div>
+                <div class="signature animate-bounce">
+                    <p>С бесконечной любовью и тоской по тебе,</p>
+                    <p class="signature-name">Твой брат ❤️</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Музыкальный плеер -->
+    <div class="music-player">
+        <button class="play-button" onclick="toggleMusic()">🎵</button>
+        <div class="music-info">
+            <p>С Днем Рождения!</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
